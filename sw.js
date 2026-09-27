@@ -1,4 +1,4 @@
-const CACHE='craft-brewery-tycoon-v6';
+const CACHE='craft-brewery-tycoon-v7';
 const ASSETS=['./','./index.html?v=6','./manifest.webmanifest','./icon.svg'];
 self.addEventListener('install',event=>{self.skipWaiting();event.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)))});
 self.addEventListener('activate',event=>{event.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});
