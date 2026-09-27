@@ -1,0 +1,11 @@
+{
+  "name": "Craft Brewery Tycoon",
+  "short_name": "Brewery Tycoon",
+  "description": "A craft brewery management simulation.",
+  "start_url": "./index.html?v=5.1",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#3b2416",
+  "theme_color": "#3b2416",
+  "icons": [{"src":"icon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
